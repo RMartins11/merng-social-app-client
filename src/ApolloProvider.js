@@ -3,7 +3,7 @@ import App from "./App"
 import { ApolloClient, InMemoryCache, createHttpLink, ApolloProvider, ApolloLink} from "@apollo/client"
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:5000"
+  uri: "https://rmartins11-social-app-server.herokuapp.com/"
 })
 
 const authLink = new ApolloLink((operation, forward)=>{
